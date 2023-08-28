@@ -1,4 +1,6 @@
 import "./App.css";
+import "./CharacterPage";
+import "./HousesPage";
 
 function App() {
   return (

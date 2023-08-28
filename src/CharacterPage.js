@@ -8,3 +8,5 @@ function CharPage(){
     );
 }
 
+export default CharPage;
+

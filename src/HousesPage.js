@@ -7,3 +7,5 @@ function HousesPage(){
         </div>
     );
 }
+
+export default HousesPage;

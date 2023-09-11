@@ -4,12 +4,20 @@ h1{
   color: white;
 }
 
+h2{
+  color: white;
+}
+
 .Headings{
   text-align: center;
 }
 
 a{
   color: white;
+}
+
+.alignRight{
+  float: right;
 }
 
 img{

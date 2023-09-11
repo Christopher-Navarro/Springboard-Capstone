@@ -24,7 +24,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/characters" element={<CharPage/>}/>
-            <Route path="/" element={<Home />}/>
+            <Route path="/" element={<Home/>}/>
             <Route path="/houses" element={<HousesPage/>}/>
           </Routes>
         </BrowserRouter>

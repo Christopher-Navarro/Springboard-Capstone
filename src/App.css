@@ -36,3 +36,12 @@ body {
   background-attachment: fixed;
   background-image: linear-gradient(rgb(0, 0, 0),rgb(255, 0, 0));
 }
+
+button a{
+  color: black;
+  margin: 10px;
+}
+
+.houseList, .characterList{
+  padding: 10px;
+}

@@ -20,9 +20,11 @@ function CharPage() {
     <div>
       <h1>Characters</h1>
       <h2 class="alignRight">
-        <a href="/">Home Page</a>
+        <button><a href="/">Home Page</a></button>
       </h2>
+      <div class="characterList">
       {characters.map((character) => <Character name={character.name} gender={character.gender}/>)}
+      </div>
     </div>
   );
 }

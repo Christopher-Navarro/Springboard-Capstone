@@ -1,26 +1,22 @@
-h1{
+h1 {
   text-align: center;
   font-size: 50px;
-  color: white;
+  color: rgb(20, 20, 20);
 }
 
-h2{
-  color: white;
+h2 {
+  color: rgb(12, 12, 12);
 }
 
-.Headings{
+.Headings {
   text-align: center;
 }
 
-a{
-  color: white;
+a {
+  color: rgb(6, 6, 6);
 }
 
-.alignRight{
-  float: right;
-}
-
-img{
+img {
   height: 500px;
   width: 700px;
   border-radius: 25px;
@@ -34,14 +30,28 @@ body {
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: linear-gradient(rgb(0, 0, 0),rgb(255, 0, 0));
+  background-image: linear-gradient(rgb(255, 251, 251), rgb(60, 185, 234));
 }
 
-button a{
+button a {
   color: black;
   margin: 10px;
 }
 
-.houseList, .characterList{
+.houseList,
+.characterList {
   padding: 10px;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid #080707;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px;
+  width: 200px;
 }

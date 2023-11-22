@@ -12,7 +12,7 @@ function BookPage() {
 
     try {
       const response = await axios.get(
-        `https://www.anapioficeandfire.com/api/books?page=${page}&pageSize=15`
+        `https://www.anapioficeandfire.com/api/books?page=${page}&pageSize=10`
       );
       setData(response.data);
     } catch (error) {
@@ -20,6 +20,16 @@ function BookPage() {
     }
 
     setLoading(false);
+  };
+
+  const loadMore = () => {
+    setPage((prevPage) => prevPage + 1);
+  };
+
+  const goBack = () => {
+    if (page > 1) {
+      setPage((prevPage) => prevPage - 1);
+    }
   };
 
   useEffect(() => {
@@ -33,7 +43,14 @@ function BookPage() {
         <button>
           <a href="/">Home Page</a>
         </button>
+        <button onClick={goBack} disabled={loading}>
+          Back
+        </button>
+        <button onClick={loadMore} disabled={loading}>
+          Next
+        </button>
       </h2>
+      
       <div className="app">
         {data.map((item, index) => (
           <BookCard key={index} data={item} />

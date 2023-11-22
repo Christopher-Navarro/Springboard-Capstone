@@ -14,12 +14,12 @@ h2 {
 
 a {
   color: rgb(6, 6, 6);
+  text-decoration: none;
 }
 
 img {
-  height: 500px;
-  width: 700px;
-  border-radius: 25px;
+  height: 600px;
+  border-radius: 30px;
 }
 
 html {
@@ -63,4 +63,18 @@ button{
   padding: 16px;
   margin: 16px;
   width: 200px;
+}
+
+.image-container {
+  display: flex;
+}
+
+.image-container img {
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.label {
+  margin-top: 5px;
+  text-align: center;
 }

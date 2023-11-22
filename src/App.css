@@ -38,6 +38,15 @@ button a {
   margin: 10px;
 }
 
+button{
+  background-color:whitesmoke;
+  border-radius: 5px;
+  margin: 3px;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+}
+
 .houseList,
 .characterList {
   padding: 10px;

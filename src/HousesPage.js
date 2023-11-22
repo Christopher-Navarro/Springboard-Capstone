@@ -12,7 +12,7 @@ function HousesPage() {
 
     try {
       const response = await axios.get(
-        `https://www.anapioficeandfire.com/api/houses?page=${page}&pageSize=15`
+        `https://www.anapioficeandfire.com/api/houses?page=${page}&pageSize=10`
       );
       setData(response.data);
     } catch (error) {
@@ -20,6 +20,10 @@ function HousesPage() {
     }
 
     setLoading(false);
+  };
+
+  const loadFirst = () => {
+    setPage(1);
   };
 
   const loadMore = () => {
@@ -42,6 +46,9 @@ function HousesPage() {
       <h2 class="alignRight">
         <button>
           <a href="/">Home Page</a>
+        </button>
+        <button onClick={loadFirst} disabled={loading}>
+          First
         </button>
         <button onClick={goBack} disabled={loading}>
           Back

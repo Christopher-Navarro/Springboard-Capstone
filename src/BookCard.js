@@ -6,6 +6,7 @@ const BookCard = ({ data }) => {
       <h3>{data.name}</h3>
       <p>Authors: {data.authors}</p>
       <p>Publisher: {data.publisher}</p>
+      <p>Number of Pages: {data.numberOfPages}</p>
       <p>ISBN: {data.isbn}</p>
       <p>Released: {data.released}</p>
       <p>Media: {data.mediaType}</p>

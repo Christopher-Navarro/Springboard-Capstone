@@ -12,7 +12,7 @@ function CharPage() {
 
     try {
       const response = await axios.get(
-        `https://www.anapioficeandfire.com/api/characters?page=${page}&pageSize=15`
+        `https://www.anapioficeandfire.com/api/characters?page=${page}&pageSize=10`
       );
       setData(response.data);
     } catch (error) {
@@ -22,8 +22,16 @@ function CharPage() {
     setLoading(false);
   };
 
+  const loadFirst = () => {
+    setPage(1);
+  };
+
   const loadMore = () => {
     setPage((prevPage) => prevPage + 1);
+  };
+
+  const loadLast = () => {
+    setPage(214);
   };
 
   const goBack = () => {
@@ -43,11 +51,17 @@ function CharPage() {
         <button>
           <a href="/">Home Page</a>
         </button>
+        <button onClick={loadFirst} disabled={loading}>
+          First
+        </button>
         <button onClick={goBack} disabled={loading}>
           Back
         </button>
         <button onClick={loadMore} disabled={loading}>
           Next
+        </button>
+        <button onClick={loadLast} disabled={loading}>
+          Last
         </button>
       </h2>
       <div className="app">

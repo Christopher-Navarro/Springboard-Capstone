@@ -63,6 +63,7 @@ button{
   padding: 16px;
   margin: 16px;
   width: 200px;
+  background-color:rgba(118, 168, 195, .15);
 }
 
 .image-container {
